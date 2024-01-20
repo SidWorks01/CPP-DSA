@@ -35,14 +35,14 @@ void Fast_IO(){
 }
 
 void Solve(){
-    
+  
 }
 
 int main(){
     Fast_IO();
-    int t = 1;
+    int t = 5;
     //cin >> t;
     while(t--)
         Solve();
     return 0;
-} 
+}
