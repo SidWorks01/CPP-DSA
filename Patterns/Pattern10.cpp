@@ -33,12 +33,22 @@ void Fast_IO(){
         freopen("input.txt", "r", stdin), freopen("output.txt", "w", stdout); 
     #endif
 }
+void pattern10(int N)
+{
+  char first_char = 'A'+N-1;
+      for(int i=0;i<N;i++){
+          for(char ch =(first_char)-i; ch<=(first_char); ch++){
+              
+              cout<<ch<<" ";
+          }
+          cout<<endl;
+      }
+}
 
 void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
-}
+  int N = 5;
+    
+  pattern10(N);}
 
 int main(){
     Fast_IO();

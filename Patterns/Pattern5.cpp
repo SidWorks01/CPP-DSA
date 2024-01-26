@@ -34,11 +34,31 @@ void Fast_IO(){
     #endif
 }
 
-void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
+
+void pattern5(int N)
+{
+    for (int i = 0; i < N; i++)
+    {
+        for (int j =0; j<N-i-1; j++)
+        {
+            cout <<" ";
+        }
+        for(int j=0;j< 2*i+1;j++){
+            
+            cout<<"*";
+        }
+         for (int j =0; j<N-i-1; j++)
+        {
+            cout <<" ";
+        }
+        cout << endl;
+    }
 }
+
+
+void Solve(){
+  int N = 5;
+  pattern5(N);}
 
 int main(){
     Fast_IO();

@@ -34,10 +34,24 @@ void Fast_IO(){
     #endif
 }
 
+void pattern3(int N)
+{
+    for (int i = 0; i < N; i++)
+    {
+
+        for (int j =N; j>i; j--)
+        {
+            cout <<"* ";
+        }
+        cout << endl;
+    }
+}
+
+
 void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
+  int N = 5;
+
+  pattern3(N);
 }
 
 int main(){

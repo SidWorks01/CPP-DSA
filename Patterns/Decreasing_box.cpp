@@ -33,12 +33,26 @@ void Fast_IO(){
         freopen("input.txt", "r", stdin), freopen("output.txt", "w", stdout); 
     #endif
 }
+void box2(int n)
+{
+     for(int i=0;i<2*n-1;i++){
+         
+         for(int j=0;j<2*n-1;j++){
+             
+             int top = i;
+             int bottom = j;
+             int right = (2*n - 2) - j;
+             int left = (2*n - 2) - i;
+             cout<<(n-min(min(top,bottom), min(left,right)))<<" ";
+         }
+         cout<<endl;
+     }
+      
+}
 
 void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
-}
+  int N = 5;
+  box2(N);}
 
 int main(){
     Fast_IO();
