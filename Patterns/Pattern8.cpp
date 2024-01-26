@@ -34,10 +34,36 @@ void Fast_IO(){
     #endif
 }
 
+void pattern1(int N)
+{
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j <=i; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+void invert_pattern1(int N)
+{
+    for (int i = 0; i < N; i++)
+    {
+        for (int j =N; j>i; j--)
+        {
+            cout <<"* ";
+        }
+        cout << endl;
+    }
+}
+
 void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
+  //combination of pattern1 and inverted
+  int N = 5;
+  pattern1(N);
+  invert_pattern1(N-1);
+
 }
 
 int main(){

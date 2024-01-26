@@ -34,11 +34,39 @@ void Fast_IO(){
     #endif
 }
 
-void Solve(){
-    int x;
-    cin>>x;
-    cout<<"Value of x :"<< x<<endl;
+void pattern9(int N)
+{
+      for(int i=0;i<N;i++){
+          
+          // for printing the spaces.
+          for(int j=0;j<N-i-1;j++){
+              cout<<" ";
+          }
+          
+          // for printing the characters.
+          char ch = 'A';
+          int inc = (2*i+1)/2;
+          for(int j=1;j<=2*i+1;j++){
+              
+              cout<<ch;
+              if(j <= inc) ch++;
+              else ch--;
+          }
+          
+          // for printing the spaces again
+          for(int j=0;j<N-i-1;j++){
+              cout<<" ";
+          }
+          cout<<endl;
+          
+      }
 }
+
+
+void Solve(){
+  int N = 5;
+    
+  pattern9(N);}
 
 int main(){
     Fast_IO();
