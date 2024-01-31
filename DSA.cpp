@@ -1,3 +1,12 @@
+/**
+ * This code snippet demonstrates the usage of various data structures in C++.
+ * It includes examples of vectors, lists, deques, stacks, queues, priority queues,
+ * sets, multisets, unordered sets, and maps.
+ *
+ * Functions are provided to explain the usage and operations of each data structure.
+ * The code also includes examples of common operations such as insertion, deletion,
+ * searching, and iteration.
+ */
 #include <bits/stdc++.h>
 
 using namespace std;
