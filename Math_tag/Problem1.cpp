@@ -34,19 +34,6 @@ void Fast_IO(){
     #endif
 }
 
-int count_digits(int n){
-    int cnt = 0;
-    while(n){
-        cnt++;
-        n /= 10;
-    }
-    return cnt;
-}
-int count_digits2(int n){
-    int cnt= (int)(log10(n) +1);
-    return cnt;
-}
-
 
 void Solve(){
     
