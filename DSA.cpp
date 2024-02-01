@@ -389,6 +389,8 @@ void explainMisc(){
     long long num2=165786578687;
     int ct2 = __builtin_popcountll(num2);
 
+    //next_permutation() is a in-built function that returns the next permutation of a string
+    //like 123 , 132 , 213 , 231 , 312 , 321
     string s ="123";
     do {
         cout<<s<<endl;
