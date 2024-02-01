@@ -36,7 +36,22 @@ void Fast_IO(){
 
 
 void Solve(){
-    
+    int n;
+    cin>>n;
+    int k;
+    cin>>k;
+    string s="abcdefghijklmnopqrstuvwxyz";
+    string s1="";
+    for (int i = 0; i < k; i++)
+    {
+        s1+=s[i];
+    }
+    //make all permutations of s1
+    vector<string> v;
+    do
+    {
+        v.push_back(s1);
+    } while (next_permutation(s1.begin(),s1.end()));
 }
 
 int main(){
