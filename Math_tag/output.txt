@@ -1,6 +1,10 @@
-7
-0
-90
-0
-0
-800000000
+Bob
+Alice
+Bob
+Alice
+Bob
+Bob
+Alice
+Alice
+Bob
+Bob
