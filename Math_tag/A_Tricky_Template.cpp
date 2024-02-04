@@ -14,19 +14,13 @@ void Solve(){
   string s1,s2,s3;
   cin>>n>>s1>>s2>>s3;
   for (int i = 0; i < n; i++)
-  {if ( s1[i]==s3[i] or s2[i]==s3[i])
-  {
-    cout<<"NO\n";
-    break;
-  }
-  else
+  {if ( s1[i]!=s3[i] and s2[i]!=s3[i])
   {
     cout<<"YES\n";
     return;
   }
-
   }
-
+  cout<<"NO\n";
 }
 
 int main(){

@@ -17,15 +17,13 @@ void Solve(){
   vector <pair<ll,ll>> v(n);
   for (auto &i:v) cin>>i.first >> i.second;
   ll ans, count_3=0;
-  ll top=0,low=0;
+  ll top=INT_MAX,low=0;
   for (int i=0;i<n;i++){
     if (v[i].first==1){
       low = max(low,v[i].second);
     }
     if (v[i].first==2){
-
-      top = v[i].second;
-      if (top>v[i].second) top = v[i].second;
+      top = min(top,v[i].second);
     }
     else continue;
   }
@@ -33,6 +31,10 @@ void Solve(){
     if (v[i].first==3 && v[i].second<=top && v[i].second>=low) count_3++;
     else continue;
   }
+  /*cout<< top<<endl;
+  cout<< low<<endl;
+  cout<< count_3<<endl;
+  cout<<"-----"<<endl;*/
   ans = top +1 -low -count_3;
   if (ans>0) cout<<ans<<endl;
   else cout<<0<<endl;
