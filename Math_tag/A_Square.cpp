@@ -34,23 +34,13 @@ void Fast_IO(){
     #endif
 }
 
-
 void Solve(){
-    int n;
-    cin>>n;
-    int k;
-    cin>>k;
-    string s="abcdefghijklmnopqrstuvwxyz";
-    string s1="";
-    for (int i = 0; i < k; i++)
-    {
-        s1+=s[i];
-    }
-    for (int i = 0; i < n; i++)
-    {
-        cout<<s1;
-    }
-    cout<<"\n";
+  int x1, y1, x2, y2, x3,y3,x4,y4;
+  cin>>x1>>y1>>x2>>y2>>x3>>y3>>x4>>y4;
+
+  int dist= (max(abs(x2-x1),abs(y2-y1)));
+  int area = dist*dist;
+  cout<<area<<endl;
 }
 
 int main(){
