@@ -46,7 +46,6 @@ void pattern10(int N)
 }
 void Solve(){
   int N = 5;
-    
   pattern10(N);}
 
 int main(){
