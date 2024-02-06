@@ -78,8 +78,6 @@ void Fast_IO(){
 // }
 
 void Solve(){
-  ll a ,ll b;
-  cin >> a >> b;
   
 }
 
