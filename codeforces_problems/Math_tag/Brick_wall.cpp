@@ -35,13 +35,18 @@ void Fast_IO(){
 }
 
 void Solve(){
-  
+  int n, m;
+  cin>>n>>m;
+  int s;
+  s=(m/2)*n;
+  cout<<s<<endl;
+
 }
 
 int main(){
     Fast_IO();
     int t = 1;
-    //cin >> t;
+    cin >> t;
     while(t--)
         Solve();
     return 0;
