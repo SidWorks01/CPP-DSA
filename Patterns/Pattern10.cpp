@@ -44,7 +44,6 @@ void pattern10(int N)
           cout<<endl;
       }
 }
-
 void Solve(){
   int N = 5;
     
@@ -53,7 +52,7 @@ void Solve(){
 int main(){
     Fast_IO();
     int t = 1;
-    //cin >> t;
+    cin >> t;
     while(t--)
         Solve();
     return 0;
