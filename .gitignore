@@ -25,10 +25,12 @@
 *.la
 *.a
 *.lib
-
 # Executables
 *.exe
 *.out
 *.app
+
 *.cph
 *.vscode
+tempCodeRunnerFile.*
+```

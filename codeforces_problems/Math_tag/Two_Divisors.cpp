@@ -77,8 +77,17 @@ void Fast_IO(){
   
 // }
 
+ll lcm(ll a, ll b){
+  return (a*b)/__gcd(a,b);
+}
 void Solve(){
-  
+    ll a, b;
+    cin >> a >> b;
+    if (b%a==0){
+    cout << (b*b)/a << "\n";
+    }else{cout << lcm(a,b) << "\n";
+    }
+
 }
 
 int main(){
