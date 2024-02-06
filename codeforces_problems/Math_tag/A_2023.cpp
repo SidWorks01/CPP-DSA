@@ -34,60 +34,32 @@ void Fast_IO(){
     #endif
 }
 
-// bool check_prime(ll n){
-//   if ( n==1) return false;
-//   for (ll i=2; i*i<=n; i++){
-//     if ( n%i==0) return false;
-//   }
-//   return true;
-// }
-// ll find_common_divisor_product(ll n, ll m){
-//   ll ans = 1;
-//   for (ll i=2; i*i<=m; i++){
-//     if ( m%i==0 && n%i==0)
-//       ans*=i;
-//   }
-//   if (check_prime(m)){
-//     return-1;
-//   }
-//   return ans;
-// }
-// ll find(ll a, ll b , ll divisor){
-//   if ( divisor==-1){
-//   if ( a==1){
-//     return b*b;
-//   }
-//   if (check_prime(b)){
-//     return a*b;
-//   }
-//   }
-// }
-// void Solve(){
-//   ll a , b;
-//   cin >> a >> b;
-//   ll divisor =find_common_divisor_product(a, b);
-//   if ( divisor==-1){
-//     cout << find(a,b,-1) << "\n";
-//   }
-//   else{
-//     a=a/divisor;
-//     b=b/divisor;}
-  
-//   cout << find(a,b,divisor)*divisor << "\n";
-  
-// }
-
-ll lcm(ll a, ll b){
-  return (a*b)/__gcd(a,b);
+bool check(vector < int >& vec){
+    int ans=2023;
+    for( int i=0; i<sz(vec);i++){
+        ans/=vec[i];}
+        if(ans==1 ||ans==7||ans==17||ans==119||ans==289||ans==2023) return true;
+    return false;
 }
-void Solve(){
-    ll a, b;
-    cin >> a >> b;
-    if (b%a==0){
-    cout << (b*b)/a << "\n";
-    }else{cout << lcm(a,b) << "\n";
-    }
 
+void Solve(){
+  int n ,k;
+  cin>>n>>k;
+  vector < int > vec(n);
+  cin(vec);
+  int ans=2023;
+  //vector<int> factors={7,17,};
+    if (check(vec)){
+        for (int i=0;i<n;i++){
+        ans/=vec[i];
+        }
+        cout<<"YES"<<endl;
+        cout<<(ans)<<" ";
+        for ( int i=1;i<k;i++)
+            cout<<1<<" ";
+        cout<<endl;
+  }
+    else cout<<"NO"<<endl;
 }
 
 int main(){
